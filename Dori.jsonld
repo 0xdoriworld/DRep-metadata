@@ -1,0 +1,92 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Dori",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://raw.githubusercontent.com/0xdoriworld/DRep-metadata/refs/heads/main/dr.png",
+      "sha256": "0c5cff576b9e9830be7663fff6cca8df26d3100f525a727e1606f02abf3bc1ed"
+    },
+    "motivations": "I believe Cardano represents the next generation, a \"Bitcoin 2.0,\" that fully realizes the core values of blockchain technology in a way no other chain has. Since 2017, I have been a professional in the blockchain space, researching, developing, and operating on various chains. From my technical perspective, Cardano architecture is the truest implementation of decentralization. I am convinced it holds the greatest future potential and I am driven to help make that potential a reality.",
+    "objectives": "My objective is to drive the expansion of the Cardano ecosystem and achieve widespread adoption. Cardano stands apart with its unparalleled decentralization, from the network layer to governance, supported by a deeply passionate community. The time is now to effectively bridge its superior technology to users both within and beyond Web3. I will leverage my market experience, technical skills, and trend analysis to spearhead this goal.",
+    "paymentAddress": "addr1qxl984v9luj9g3ql45sh890trdwhhazjmdja3vsqhc8jkptxqt94a2z7sg8wwutp0w889m5nyjdv5ffpx7y6tpsnfe2qm2zrnv",
+    "qualifications": "As a blockchain engineer at a global company, my experience includes designing and operating DApps across multiple blockchain networks. I have hands-on experience in the Ethereum ecosystem, contributing to solutions and serving as an official ambassador for Arbitrum. My goal is to leverage this background to help the Cardano ecosystem navigate its future challenges and opportunities.",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "'ADA Korea': An X Community for the Korean Cardano community.",
+        "uri": "https://x.com/i/communities/1923304961817157807"
+      },
+      {
+        "@type": "Link",
+        "label": "'Dori's Coin Memo': TG channel covering all market issues & tech.",
+        "uri": "https://t.me/doriworld"
+      },
+      {
+        "@type": "Identity",
+        "label": "This is my X account, where all my thoughts and activities are recorded.",
+        "uri": "https://x.com/dori_coin"
+      }
+    ]
+  }
+}
